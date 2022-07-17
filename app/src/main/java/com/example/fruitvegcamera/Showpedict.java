@@ -24,20 +24,28 @@ import java.util.Locale;
 
 public class Showpedict extends AppCompatActivity {
 
-    ImageButton Back;
+
     TextToSpeech textToSpeech;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_showpedict);
+        String name;
+        String des;
+        String nameThai;
 
         TextView textViewTitle,textReading,textNamefruitthai;
         ImageView imageViewPredict;
+        ImageButton Back,ButtonSound;
+        ////////////////////////////////////////////////////////
         textReading = findViewById(R.id.textReading);
         textNamefruitthai = findViewById(R.id.textNamefruitthai);
-
+        Back = (ImageButton)findViewById(R.id.imageButtonBack);
         textViewTitle = findViewById(R.id.textTitle);
         imageViewPredict = findViewById(R.id.imageViewPredict);
+        ButtonSound = findViewById(R.id.imageButtonSound);
         //get id predict
         Intent receiverIntent = getIntent();
         String receiverValue = receiverIntent.getStringExtra("id");
@@ -62,9 +70,9 @@ public class Showpedict extends AppCompatActivity {
 
             JSONObject obj = jsonArray.getJSONObject(indexFruit);
 
-            String name= obj.getString("name");
-            String des = obj.getString("des");
-            String nameThai = obj.getString("nameThai");
+            name = obj.getString("name");
+            des = obj.getString("des");
+            nameThai = obj.getString("nameThai");
             //แสดงผลลัพธ์
             textViewTitle.setText(name);
             textReading.setText(des);
@@ -102,7 +110,7 @@ public class Showpedict extends AppCompatActivity {
         } catch (IOException | JSONException e) {
             e.printStackTrace();
         }
-        Back = (ImageButton)findViewById(R.id.imageButtonBack);
+
         Back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -110,7 +118,22 @@ public class Showpedict extends AppCompatActivity {
                 startActivity(Back);
             }
         });
+
+        ButtonSound.setOnClickListener(new View.OnClickListener() {
+
+
+            @Override
+            public void onClick(View v) {
+                String name = new String(textViewTitle.getText().toString());
+                textToSpeech.speak(name,TextToSpeech.QUEUE_FLUSH,null);
+            }
+        });
+
+
+
     }
+
+
 }
 
 
