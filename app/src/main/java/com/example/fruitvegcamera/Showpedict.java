@@ -96,16 +96,13 @@ public class Showpedict extends AppCompatActivity {
                         if(lang == TextToSpeech.LANG_MISSING_DATA || lang == TextToSpeech.LANG_NOT_SUPPORTED){
                             Toast.makeText(Showpedict.this,"Language is not supported",Toast.LENGTH_SHORT).show();
                         }else{
-                            textToSpeech.speak(name.toString(),TextToSpeech.QUEUE_ADD,null);
+                            //textToSpeech.speak(name.toString(),TextToSpeech.QUEUE_ADD,null);
                             //Toast.makeText(Showpedict.this,"Language Supported",Toast.LENGTH_SHORT).show();
                         }
                     }
                 }
             });
-
-
-            textToSpeech.speak(name,TextToSpeech.QUEUE_FLUSH,null);
-
+            
 
         } catch (IOException | JSONException e) {
             e.printStackTrace();
