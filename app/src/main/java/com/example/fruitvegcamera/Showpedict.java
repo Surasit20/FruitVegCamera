@@ -38,14 +38,15 @@ public class Showpedict extends AppCompatActivity {
 
         TextView textViewTitle,textReading,textNamefruitthai;
         ImageView imageViewPredict;
-        ImageButton Back,ButtonSound;
+        ImageButton Back,ButtonSoundEng,ButtonSoundTh;
         ////////////////////////////////////////////////////////
         textReading = findViewById(R.id.textReading);
         textNamefruitthai = findViewById(R.id.textNamefruitthai);
         Back = (ImageButton)findViewById(R.id.imageButtonBack);
         textViewTitle = findViewById(R.id.textTitle);
         imageViewPredict = findViewById(R.id.imageViewPredict);
-        ButtonSound = findViewById(R.id.imageButtonSound);
+        ButtonSoundEng = findViewById(R.id.imageButtonSound);
+        ButtonSoundTh = findViewById(R.id.imageButtonSoundThai);
         //get id predict
         Intent receiverIntent = getIntent();
         String receiverValue = receiverIntent.getStringExtra("id");
@@ -116,7 +117,7 @@ public class Showpedict extends AppCompatActivity {
             }
         });
 
-        ButtonSound.setOnClickListener(new View.OnClickListener() {
+        ButtonSoundEng.setOnClickListener(new View.OnClickListener() {
 
 
             @Override
@@ -127,7 +128,13 @@ public class Showpedict extends AppCompatActivity {
         });
 
 
-
+        ButtonSoundTh.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String name = new String(textNamefruitthai.getText().toString());
+                textToSpeech.speak(name,TextToSpeech.QUEUE_FLUSH,null);
+            }
+        });
     }
 
 
