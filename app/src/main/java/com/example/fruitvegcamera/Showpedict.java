@@ -7,6 +7,8 @@ import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
 import android.util.Log;
+import android.view.View;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -22,15 +24,18 @@ import java.util.Locale;
 
 public class Showpedict extends AppCompatActivity {
 
-
+    ImageButton Back;
     TextToSpeech textToSpeech;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_showpedict);
 
-        TextView textViewTitle;
+        TextView textViewTitle,textReading,textNamefruitthai;
         ImageView imageViewPredict;
+        textReading = findViewById(R.id.textReading);
+        textNamefruitthai = findViewById(R.id.textNamefruitthai);
+
         textViewTitle = findViewById(R.id.textTitle);
         imageViewPredict = findViewById(R.id.imageViewPredict);
         //get id predict
@@ -59,9 +64,12 @@ public class Showpedict extends AppCompatActivity {
 
             String name= obj.getString("name");
             String des = obj.getString("des");
-
+            String nameThai = obj.getString("nameThai");
             //แสดงผลลัพธ์
             textViewTitle.setText(name);
+            textReading.setText(des);
+            textNamefruitthai.setText(nameThai);
+            //แสดงผลลัพธ์
             String uri = "@drawable/" + name.toLowerCase(Locale.ROOT);  // where myresource (without the extension) is the file
             Log.d("name",name.toLowerCase(Locale.ROOT));
             int imageResource = getResources().getIdentifier(uri, null, getPackageName());
@@ -94,11 +102,17 @@ public class Showpedict extends AppCompatActivity {
         } catch (IOException | JSONException e) {
             e.printStackTrace();
         }
-
-
+        Back = (ImageButton)findViewById(R.id.imageButtonBack);
+        Back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent Back = new Intent(Showpedict.this,MainActivity.class);
+                startActivity(Back);
+            }
+        });
     }
-
 }
+
 
 
 

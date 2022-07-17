@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#99CC33"
+    android:background="#ffa8d18d"
     tools:context=".Introapp">
 
     <ImageView
@@ -34,8 +34,8 @@
         android:layout_width="192dp"
         android:layout_height="144dp"
         android:layout_below="@+id/logointro"
-        android:layout_marginTop="50dp"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
         android:background="@drawable/ic_start"
         android:scaleType="fitCenter"
         tools:ignore="MissingConstraints" />

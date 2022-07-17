@@ -2,103 +2,121 @@
   "fruit": [
     {
       "name": "Water Spinach",
-      "des": "สีแดง",
-      "image": "apple.png"
+      "des": "(วอ'เทอะสพินนิจ)",
+      "nameThai": "ผักบุ้ง"
+
     },
     {
       "name": "Tomato",
-      "des": "อิหยังนิ",
-      "image": "apple.png"
+      "des": "(ทะเม'โท)",
+      "nameThai": "มะเขือเทศ"
+
     },
     {
       "name": "Strawberry",
-      "des": "อิหยังนิ",
-      "image": "apple.png"
+      "des": "(สทรอ'เบอรี)",
+      "nameThai": "สตรอว์เบอร์รี"
+
     },
     {
       "name": "Rambutan",
-      "des": "อิหยังนิ",
-      "image": "apple.png"
+      "des": "(แรมบู'เทิน)",
+      "nameThai": "เงาะ"
+
     },
     {
       "name": "Papaya",
-      "des": "อิหยังนิ",
-      "image": "apple.png"
+      "des": "(พะพา'ยะ)",
+      "nameThai": "มะละกอ"
+
     },
     {
       "name": "Mango",
-      "des": "อิหยังนิ",
-      "image": "apple.png"
+      "des": "(แมง'โก)",
+      "nameThai": "มะม่วง"
+
     },
     {
       "name": "Pumpkin",
-      "des": "อิหยังนิ",
-      "image": "apple.png"
+      "des": "(พัมพฺ'คิน)",
+      "nameThai": "ฟักทอง"
+
     },
     {
       "name": "Potato",
-      "des": "อิหยังนิ",
-      "image": "apple.png"
+      "des": "(พะเท'โท)",
+      "nameThai": "มันฝรั่ง"
+
     },
     {
       "name": "Pineapple",
-      "des": "อิหยังนิ",
-      "image": "apple.png"
+      "des": "(ไพนฺแอพ'เพิล)",
+      "nameThai": "สับปะรด"
+
     },
     {
       "name": "Orange",
-      "des": "อิหยังนิ",
-      "image": "apple.png"
+      "des": "(ออ'รินจฺ)",
+      "nameThai": "ส้ม"
     },
     {
       "name": "Grapes",
-      "des": "อิหยังนิ",
-      "image": "apple.png"
+      "des": "(เกรพ)",
+      "nameThai": "องุ่น"
+
     },
     {
       "name": "Cucumber",
-      "des": "อิหยังนิ",
-      "image": "apple.png"
+      "des": "(คิว'คัมเบอะ)",
+      "nameThai": "แตงกวา"
+
     },
     {
       "name": "Watermelon",
-      "des": "อิหยังนิ",
-      "image": "apple.png"
+      "des": "(วอ'เทอะเมลเลิน)",
+      "nameThai": "แตงโม"
+
     },
     {
       "name": "Coconut",
-      "des": "อิหยังนิ",
-      "image": "apple.png"
+      "des": "(โคโค'นัท)",
+      "nameThai": "มะพร้าว"
     },
     {
       "name": "Chinese Cabbage",
-      "des": "อิหยังนิ",
-      "image": "apple.png"
+      "des": "(ไชนิสแคบ'บิจฺ)",
+      "nameThai": "ผักกาดขาว"
+
     },
     {
       "name": "Carrot",
-      "des": "อิหยังนิ",
-      "image": "apple.png"
+      "des": "(แค'เริท)",
+      "nameThai": "แครอท"
+
     },
     {
       "name": "Cabbage",
-      "des": "อิหยังนิ",
-      "image": "apple.png"
+      "des": "(แคบ'บิจฺ)",
+      "nameThai": "กะหล่ำปลี"
+
     },
     {
       "name": "Banana",
-      "des": "อิหยังนิ",
-      "image": "apple.png"
+      "des": "(บะแนน'นะ)",
+      "nameThai": "กล้วย"
+
     },
     {
       "name": "Broccoli",
-      "des": "อิหยังนิ",
-      "image": "apple.png"
+      "des": "(บรอค'คะลี)",
+      "nameThai": "บรอคโคลี่"
+
     },
     {
       "name": "Apple",
-      "des": "อิหยังนิ",
-      "image": "apple.png"
+      "des": "(แอพ' เพิล)",
+      "nameThai": "แอปเปิ้ล "
+
     }
   ]
 }

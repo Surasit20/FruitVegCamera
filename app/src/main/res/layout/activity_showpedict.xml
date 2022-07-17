@@ -4,25 +4,71 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#ffa8d18d"
     tools:context=".Showpedict">
 
     <ImageView
         android:id="@+id/imageViewPredict"
         android:layout_width="match_parent"
         android:layout_height="345dp"
-        android:layout_marginTop="20dp"
-        android:src="@drawable/image_gallery"
         android:layout_centerHorizontal="true"
-        />
+        android:layout_marginTop="20dp"
+        android:src="@drawable/image_gallery" />
 
     <TextView
         android:id="@+id/textTitle"
-        android:layout_width="396dp"
-        android:layout_height="47dp"
+        android:layout_width="176dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageViewPredict"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text=""
+        android:textColor="#000000"
+        android:textSize="30dp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/textReading"
+        android:layout_width="166dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textTitle"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        android:layout_marginLeft="18dp"
-        android:layout_below="@+id/imageViewPredict"
         android:text=""
+        android:textColor="#000000"
+        android:textSize="28dp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/textNamefruitthai"
+        android:layout_width="166dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textReading"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="#000000"
         android:textSize="28dp" />
+
+    <ImageButton
+        android:id="@+id/imageButtonSound"
+        android:layout_width="98dp"
+        android:layout_height="63dp"
+        android:layout_below="@+id/textNamefruitthai"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp"
+        android:background="#ffa8d18d"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/ic_speaker" />
+    <ImageButton
+        android:id="@+id/imageButtonBack"
+        android:layout_width="98dp"
+        android:layout_height="63dp"
+        android:layout_below="@+id/imageButtonSound"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="#ffa8d18d"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/ic_back" />
 </RelativeLayout>

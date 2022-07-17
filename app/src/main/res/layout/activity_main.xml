@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#99CC33"
+    android:background="#ffa8d18d"
     tools:context=".MainActivity">
 
     <ImageView
@@ -14,7 +14,7 @@
         android:layout_marginTop="20dp"
         android:src="@drawable/image_gallery"
         android:layout_centerHorizontal="true"
-         />
+        />
 
     <Button
         android:id="@+id/selectBtn"
