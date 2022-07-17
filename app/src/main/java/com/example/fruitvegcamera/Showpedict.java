@@ -1,9 +1,11 @@
 package com.example.fruitvegcamera;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
+import android.os.Build;
 import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
 import android.util.Log;
@@ -25,7 +27,8 @@ import java.util.Locale;
 public class Showpedict extends AppCompatActivity {
 
 
-    TextToSpeech textToSpeech;
+    TextToSpeech textToSpeechEng;
+    TextToSpeech textToSpeechThai;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,7 +48,7 @@ public class Showpedict extends AppCompatActivity {
         Back = (ImageButton)findViewById(R.id.imageButtonBack);
         textViewTitle = findViewById(R.id.textTitle);
         imageViewPredict = findViewById(R.id.imageViewPredict);
-        ButtonSoundEng = findViewById(R.id.imageButtonSound);
+        ButtonSoundEng = findViewById(R.id.imageButtonSoundEng);
         ButtonSoundTh = findViewById(R.id.imageButtonSoundThai);
         //get id predict
         Intent receiverIntent = getIntent();
@@ -88,12 +91,12 @@ public class Showpedict extends AppCompatActivity {
 
             //แปลงข้อความให้เป็นเสียง
 
-            textToSpeech = new TextToSpeech(getApplicationContext(), new TextToSpeech.OnInitListener() {
+            textToSpeechEng = new TextToSpeech(getApplicationContext(), new TextToSpeech.OnInitListener() {
                 @Override
                 public void onInit(int i) {
 
                     if(i == TextToSpeech.SUCCESS){
-                        int lang = textToSpeech.setLanguage(Locale.ENGLISH);
+                        int lang = textToSpeechEng.setLanguage(Locale.ENGLISH);
                         if(lang == TextToSpeech.LANG_MISSING_DATA || lang == TextToSpeech.LANG_NOT_SUPPORTED){
                             Toast.makeText(Showpedict.this,"Language is not supported",Toast.LENGTH_SHORT).show();
                         }else{
@@ -103,7 +106,23 @@ public class Showpedict extends AppCompatActivity {
                     }
                 }
             });
-            
+
+            textToSpeechThai = new TextToSpeech(getApplicationContext(), new TextToSpeech.OnInitListener() {
+                @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
+                @Override
+                public void onInit(int i) {
+
+                    if(i == TextToSpeech.SUCCESS){
+                        int lang = textToSpeechThai.setLanguage(Locale.forLanguageTag("th"));
+                        if(lang == TextToSpeech.LANG_MISSING_DATA || lang == TextToSpeech.LANG_NOT_SUPPORTED){
+                            Toast.makeText(Showpedict.this,"Language is not supported",Toast.LENGTH_SHORT).show();
+                        }else{
+                            //textToSpeech.speak(name.toString(),TextToSpeech.QUEUE_ADD,null);
+                            //Toast.makeText(Showpedict.this,"Language Supported",Toast.LENGTH_SHORT).show();
+                        }
+                    }
+                }
+            });
 
         } catch (IOException | JSONException e) {
             e.printStackTrace();
@@ -117,22 +136,23 @@ public class Showpedict extends AppCompatActivity {
             }
         });
 
-        ButtonSoundEng.setOnClickListener(new View.OnClickListener() {
+        ButtonSoundTh.setOnClickListener(new View.OnClickListener() {
 
 
             @Override
             public void onClick(View v) {
-                String name = new String(textViewTitle.getText().toString());
-                textToSpeech.speak(name,TextToSpeech.QUEUE_FLUSH,null);
+                String name = new String(textNamefruitthai.getText().toString());
+                textToSpeechThai.speak(name,TextToSpeech.QUEUE_FLUSH,null);
+
             }
         });
 
 
-        ButtonSoundTh.setOnClickListener(new View.OnClickListener() {
+        ButtonSoundEng.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String name = new String(textNamefruitthai.getText().toString());
-                textToSpeech.speak(name,TextToSpeech.QUEUE_FLUSH,null);
+                String name = new String(textViewTitle.getText().toString());
+                textToSpeechEng.speak(name,TextToSpeech.QUEUE_FLUSH,null);
             }
         });
     }

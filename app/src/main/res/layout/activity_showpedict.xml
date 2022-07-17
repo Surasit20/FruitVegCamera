@@ -52,7 +52,7 @@
         android:textSize="28dp" />
 
     <ImageButton
-        android:id="@+id/imageButtonSound"
+        android:id="@+id/imageButtonSoundEng"
         android:layout_width="88dp"
         android:layout_height="47dp"
         android:layout_below="@+id/textTitle"
