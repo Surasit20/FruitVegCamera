@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Desktop/New folder (2)/New folder/FruitVegCamera-main/app/src/main/res/layout/activity_intro.xml" value="0.3625" />
+        <entry key="..\:/Desktop/New folder (2)/New folder/FruitVegCamera-main/app/src/main/res/layout/activity_introapp.xml" value="0.25" />
+        <entry key="..\:/Desktop/New folder (2)/New folder/FruitVegCamera-main/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Desktop/New folder (2)/New folder/FruitVegCamera-main/app/src/main/res/layout/activity_showpedict.xml" value="0.26990740740740743" />
+        <entry key="..\:/Desktop/New folder (2)/New folder/FruitVegCamera-main/app/src/main/res/layout/activity_showtextpedict.xml" value="0.17592592592592593" />
+        <entry key="..\:/Project/FruitVegCamera/app/src/main/res/layout/activity_main.xml" value="0.17074275362318841" />
+        <entry key="..\:/Project/FruitVegCamera/app/src/main/res/layout/activity_showpedict.xml" value="0.2259963768115942" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

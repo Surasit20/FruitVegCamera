@@ -1,0 +1,20 @@
+Apple       19
+Banana      17
+Broccoli    18
+Cabbage     16
+Carrot      15
+Chinese Cabbage 14
+Coconut 13
+Cucumber 11
+Grapes  10
+Mango  5
+Orange 9
+Papaya 4
+Pineapple 8
+Potato 7
+Pumpkin 6
+Rambutan 3
+Strawberry 2
+Tomato 1
+Watermelon 12
+Water Spinach 0

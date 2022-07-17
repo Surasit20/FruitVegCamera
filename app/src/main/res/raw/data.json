@@ -1,0 +1,104 @@
+{
+  "fruit": [
+    {
+      "name": "Water Spinach",
+      "des": "สีแดง",
+      "image": "apple.png"
+    },
+    {
+      "name": "Tomato",
+      "des": "อิหยังนิ",
+      "image": "apple.png"
+    },
+    {
+      "name": "Strawberry",
+      "des": "อิหยังนิ",
+      "image": "apple.png"
+    },
+    {
+      "name": "Rambutan",
+      "des": "อิหยังนิ",
+      "image": "apple.png"
+    },
+    {
+      "name": "Papaya",
+      "des": "อิหยังนิ",
+      "image": "apple.png"
+    },
+    {
+      "name": "Mango",
+      "des": "อิหยังนิ",
+      "image": "apple.png"
+    },
+    {
+      "name": "Pumpkin",
+      "des": "อิหยังนิ",
+      "image": "apple.png"
+    },
+    {
+      "name": "Potato",
+      "des": "อิหยังนิ",
+      "image": "apple.png"
+    },
+    {
+      "name": "Pineapple",
+      "des": "อิหยังนิ",
+      "image": "apple.png"
+    },
+    {
+      "name": "Orange",
+      "des": "อิหยังนิ",
+      "image": "apple.png"
+    },
+    {
+      "name": "Grapes",
+      "des": "อิหยังนิ",
+      "image": "apple.png"
+    },
+    {
+      "name": "Cucumber",
+      "des": "อิหยังนิ",
+      "image": "apple.png"
+    },
+    {
+      "name": "Watermelon",
+      "des": "อิหยังนิ",
+      "image": "apple.png"
+    },
+    {
+      "name": "Coconut",
+      "des": "อิหยังนิ",
+      "image": "apple.png"
+    },
+    {
+      "name": "Chinese Cabbage",
+      "des": "อิหยังนิ",
+      "image": "apple.png"
+    },
+    {
+      "name": "Carrot",
+      "des": "อิหยังนิ",
+      "image": "apple.png"
+    },
+    {
+      "name": "Cabbage",
+      "des": "อิหยังนิ",
+      "image": "apple.png"
+    },
+    {
+      "name": "Banana",
+      "des": "อิหยังนิ",
+      "image": "apple.png"
+    },
+    {
+      "name": "Broccoli",
+      "des": "อิหยังนิ",
+      "image": "apple.png"
+    },
+    {
+      "name": "Apple",
+      "des": "อิหยังนิ",
+      "image": "apple.png"
+    }
+  ]
+}
