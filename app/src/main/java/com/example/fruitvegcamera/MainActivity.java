@@ -3,10 +3,12 @@ package com.example.fruitvegcamera;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 
 import android.Manifest;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
@@ -38,15 +40,11 @@ public class MainActivity extends AppCompatActivity {
     ImageView imageView;
     int imageSize = 128;
 
-
     @RequiresApi(api = Build.VERSION_CODES.M)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-
-
         selectBtn = findViewById(R.id.selectBtn);
         predictBtn = findViewById(R.id.predictBtn);
         cameraBtn = findViewById(R.id.cameraBtn);
@@ -78,14 +76,27 @@ public class MainActivity extends AppCompatActivity {
 
         predictBtn.setOnClickListener(new View.OnClickListener() {
             @Override
-
             public void onClick(View view) {
-                Intent start = new Intent(MainActivity.this,Showpedict.class);
+                //ถ้าไม่มีรูปให้แสดง alert
+                if(bitmap == null){
+                    AlertDialog alert = new AlertDialog.Builder(MainActivity.this).create();
+                    alert.setTitle("Image is Empty!!");
+                    alert.setMessage("Put your image fruit.");
+                    alert.setButton(alert.BUTTON_NEUTRAL, "OK", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            alert.dismiss();
+                        }
+                    });
+                    alert.show();
+                    Log.i("alert","alert out");
 
+                    return;
+                }
+                Intent start = new Intent(MainActivity.this,Showpedict.class);
                 int dimension = Math.min(bitmap.getWidth(), bitmap.getHeight());
                 bitmap = ThumbnailUtils.extractThumbnail(bitmap, dimension, dimension);
                 imageView.setImageBitmap(bitmap);
-
                 bitmap = Bitmap.createScaledBitmap(bitmap, imageSize, imageSize, false);
 
                 try {
@@ -96,7 +107,7 @@ public class MainActivity extends AppCompatActivity {
                     ByteBuffer byteBuffer = ByteBuffer.allocateDirect(4 * imageSize * imageSize * 3);
                     byteBuffer.order(ByteOrder.nativeOrder());
 
-                    // get 1D array of 224 * 224 pixels in image
+                    // get 1D array of 128 * 128 pixels in image
                     int [] intValues = new int[imageSize * imageSize];
                     bitmap.getPixels(intValues, 0, bitmap.getWidth(), 0, 0, bitmap.getWidth(), bitmap.getHeight());
 
@@ -127,15 +138,32 @@ public class MainActivity extends AppCompatActivity {
                             maxPos = i;
                         }
                     }
-                    Log.i("ressssss", String.valueOf(maxPos));
+
+                    //ถ้าค่าความแม่นยำน้อยกว่า 50% จะทำนายผิด
+                    Log.i("predict", String.valueOf(confidences[maxPos]));
+                    if(confidences[maxPos] < 0.5f){
+                        AlertDialog alert = new AlertDialog.Builder(MainActivity.this).create();
+                        alert.setTitle("Wrong Prediction");
+                        alert.setMessage("Can't Predict");
+                        alert.setButton(alert.BUTTON_NEUTRAL, "OK", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                alert.dismiss();
+                            }
+                        });
+                        alert.show();
+                        Log.i("alert","alert out");
+
+                        return;
+                    }
+
+                    Log.i("res", String.valueOf(maxPos));
 
                     // Releases model resources if no longer used.
-
-
                     start.putExtra("id",String.valueOf(maxPos));
                     startActivity(start);
-
                     model.close();
+
                 } catch (IOException e) {
                     // TODO Handle the exception
                 }
@@ -164,7 +192,6 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         }
-
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
     }
 
