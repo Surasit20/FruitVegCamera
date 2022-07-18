@@ -49,6 +49,8 @@ public class MainActivity extends AppCompatActivity {
         predictBtn = findViewById(R.id.predictBtn);
         cameraBtn = findViewById(R.id.cameraBtn);
         imageView = findViewById(R.id.imageView);
+
+
         // เลือกรูปจากเกลรอรี่
         selectBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -171,6 +173,15 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+
+
+    }
+
+    @Override
+    public void onBackPressed() {
+        Intent start = new Intent(MainActivity.this,Introapp.class);
+        startActivity(start);
+        super.onBackPressed();
     }
     @RequiresApi(api = Build.VERSION_CODES.M)
     void getPermission(){
@@ -218,6 +229,7 @@ public class MainActivity extends AppCompatActivity {
         }
         super.onActivityResult(requestCode, resultCode, data);
     }
+
 
 
 }
