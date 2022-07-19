@@ -1,12 +1,5 @@
 package com.example.fruitvegcamera;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.annotation.RequiresApi;
-import androidx.appcompat.app.AlertDialog;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ActivityCompat;
-
 import android.Manifest;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -19,14 +12,19 @@ import android.os.Bundle;
 import android.provider.MediaStore;
 import android.util.Log;
 import android.view.View;
-import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.annotation.RequiresApi;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
 
 import com.example.fruitvegcamera.ml.Model;
 
 import org.tensorflow.lite.DataType;
-
-import org.tensorflow.lite.support.image.TensorImage;
 import org.tensorflow.lite.support.tensorbuffer.TensorBuffer;
 
 import java.io.IOException;
@@ -35,7 +33,8 @@ import java.nio.ByteOrder;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button selectBtn, predictBtn,cameraBtn;
+   // Button selectBtn, predictBtn,cameraBtn;
+    ImageButton selectImageBtn,selectCameraBtn,selectPredictBtn;
     Bitmap bitmap;
     ImageView imageView;
     int imageSize = 128;
@@ -45,14 +44,18 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        selectBtn = findViewById(R.id.selectBtn);
+        /*selectBtn = findViewById(R.id.selectBtn);
         predictBtn = findViewById(R.id.predictBtn);
-        cameraBtn = findViewById(R.id.cameraBtn);
+        cameraBtn = findViewById(R.id.cameraBtn);*/
+        selectImageBtn = findViewById(R.id.selectImageBtn);
+        selectCameraBtn = findViewById(R.id.selectCameraBtn);
+        selectPredictBtn = findViewById(R.id.selectPredictBtn);
+
         imageView = findViewById(R.id.imageView);
 
 
         // เลือกรูปจากเกลรอรี่
-        selectBtn.setOnClickListener(new View.OnClickListener() {
+        selectImageBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent();
@@ -62,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         //ถ่ายรูป
-        cameraBtn.setOnClickListener(new View.OnClickListener() {
+        selectCameraBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 // ขอสิทธิ์กล้องถ่ายรูป
@@ -76,7 +79,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        predictBtn.setOnClickListener(new View.OnClickListener() {
+        selectPredictBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 //ถ้าไม่มีรูปให้แสดง alert
@@ -186,11 +189,11 @@ public class MainActivity extends AppCompatActivity {
     @RequiresApi(api = Build.VERSION_CODES.M)
     void getPermission(){
 
-       if(Build.VERSION.SDK_INT == Build.VERSION_CODES.M){
-           if(checkSelfPermission(Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED){
-               ActivityCompat.requestPermissions(MainActivity.this, new String[] {Manifest.permission.CAMERA},11);
-           }
-       }
+        if(Build.VERSION.SDK_INT == Build.VERSION_CODES.M){
+            if(checkSelfPermission(Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED){
+                ActivityCompat.requestPermissions(MainActivity.this, new String[] {Manifest.permission.CAMERA},11);
+            }
+        }
     }
 
     @RequiresApi(api = Build.VERSION_CODES.M)

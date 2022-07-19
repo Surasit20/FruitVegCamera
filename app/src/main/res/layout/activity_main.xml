@@ -11,18 +11,87 @@
         android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="345dp"
-        android:layout_marginTop="20dp"
-        android:src="@drawable/image_gallery"
         android:layout_centerHorizontal="true"
-        />
+        android:layout_marginTop="20dp"
+        android:src="@drawable/image_gallery" />
 
-    <Button
+    <ImageButton
+        android:id="@+id/selectImageBtn"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_below="@+id/imageView"
+        android:layout_marginLeft="50px"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        android:layout_toRightOf="@+id/selectCameraBtn"
+
+        android:background="#ffa8d18d"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_picture_add"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/selectCameraBtn"
+        android:layout_width="135dp"
+        android:layout_height="75dp"
+        android:layout_below="@+id/imageView"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50px"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        android:background="#ffa8d18d"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_camera_add"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+     <TextView
+         android:id="@+id/textView2"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/selectCameraBtn"
+         android:layout_marginStart="80dp"
+         android:layout_marginTop="0dp"
+         android:layout_marginEnd="50dp"
+         android:background="#ffa8d18d"
+         android:scaleType="fitCenter"
+         android:text="กล้องถ่ายรูป"
+         android:textAlignment="center"/>
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/selectImageBtn"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="50dp"
+        android:layout_toRightOf="@+id/textView2"
+        android:background="#ffa8d18d"
+        android:scaleType="fitCenter"
+        android:text="แกลเลอรี่ภาพ"
+        android:textAlignment="center"/>
+
+    <ImageButton
+        android:id="@+id/selectPredictBtn"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50px"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="#ffa8d18d"
+        android:scaleType="fitCenter"
+        android:src="@drawable/trans"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+   <!-- <Button
         android:id="@+id/selectBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Select image"
-        android:layout_below="@+id/imageView"
-        android:layout_marginTop="100dp"
+        android:layout_below="@+id/selectImageBtn"
+        android:layout_marginTop="0dp"
         android:layout_centerHorizontal="true"
 
         />
@@ -33,7 +102,7 @@
         android:layout_height="wrap_content"
         android:text="Camera"
         android:layout_below="@+id/selectBtn"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="0dp"
         android:layout_centerHorizontal="true"
         />
 
@@ -43,6 +112,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/cameraBtn"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="0dp"
         android:text="Predict" />
+-->
 </RelativeLayout>
