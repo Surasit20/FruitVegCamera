@@ -38,14 +38,14 @@ public class Showpedict extends AppCompatActivity {
         String name;
         String des;
         String nameThai;
-
-        TextView textViewTitle,textReading,textNamefruitthai;
+        String imageFruit;
+        TextView textViewTitle, textReading, textNamefruitthai;
         ImageView imageViewPredict;
-        ImageButton Back,ButtonSoundEng,ButtonSoundTh;
+        ImageButton Back, ButtonSoundEng, ButtonSoundTh;
         ////////////////////////////////////////////////////////
         textReading = findViewById(R.id.textReading);
         textNamefruitthai = findViewById(R.id.textNamefruitthai);
-        Back = (ImageButton)findViewById(R.id.imageButtonBack);
+        Back = (ImageButton) findViewById(R.id.imageButtonBack);
         textViewTitle = findViewById(R.id.textTitle);
         imageViewPredict = findViewById(R.id.imageViewPredict);
         ButtonSoundEng = findViewById(R.id.imageButtonSoundEng);
@@ -67,23 +67,27 @@ public class Showpedict extends AppCompatActivity {
             XmlFileInputStream.read(buffer);
             XmlFileInputStream.close();
 
-            json = new String(buffer,"UTF-8");
+            json = new String(buffer, "UTF-8");
             JSONObject jsonObject = new JSONObject(json);
             JSONArray jsonArray = jsonObject.getJSONArray("fruit");
 
 
             JSONObject obj = jsonArray.getJSONObject(indexFruit);
-
+            Log.d("name", String.valueOf(indexFruit));
             name = obj.getString("name");
+            Log.d("name",name);
             des = obj.getString("des");
             nameThai = obj.getString("nameThai");
+            imageFruit = obj.getString("image");
+            Log.d("name",name);
             //แสดงผลลัพธ์
             textViewTitle.setText(name);
             textReading.setText(des);
             textNamefruitthai.setText(nameThai);
             //แสดงผลลัพธ์
-            String uri = "@drawable/" + name.toLowerCase(Locale.ROOT);  // where myresource (without the extension) is the file
-            Log.d("name",name.toLowerCase(Locale.ROOT));
+            String uri = "@drawable/" +  imageFruit.toLowerCase(Locale.ROOT);  // where myresource (without the extension) is the file
+
+
             int imageResource = getResources().getIdentifier(uri, null, getPackageName());
             Drawable res = getResources().getDrawable(imageResource);
             imageViewPredict.setImageDrawable(res);
@@ -95,11 +99,11 @@ public class Showpedict extends AppCompatActivity {
                 @Override
                 public void onInit(int i) {
 
-                    if(i == TextToSpeech.SUCCESS){
+                    if (i == TextToSpeech.SUCCESS) {
                         int lang = textToSpeechEng.setLanguage(Locale.ENGLISH);
-                        if(lang == TextToSpeech.LANG_MISSING_DATA || lang == TextToSpeech.LANG_NOT_SUPPORTED){
-                            Toast.makeText(Showpedict.this,"Language is not supported",Toast.LENGTH_SHORT).show();
-                        }else{
+                        if (lang == TextToSpeech.LANG_MISSING_DATA || lang == TextToSpeech.LANG_NOT_SUPPORTED) {
+                            Toast.makeText(Showpedict.this, "Language is not supported", Toast.LENGTH_SHORT).show();
+                        } else {
                             //textToSpeech.speak(name.toString(),TextToSpeech.QUEUE_ADD,null);
                             //Toast.makeText(Showpedict.this,"Language Supported",Toast.LENGTH_SHORT).show();
                         }
@@ -112,11 +116,11 @@ public class Showpedict extends AppCompatActivity {
                 @Override
                 public void onInit(int i) {
 
-                    if(i == TextToSpeech.SUCCESS){
+                    if (i == TextToSpeech.SUCCESS) {
                         int lang = textToSpeechThai.setLanguage(Locale.forLanguageTag("th"));
-                        if(lang == TextToSpeech.LANG_MISSING_DATA || lang == TextToSpeech.LANG_NOT_SUPPORTED){
-                            Toast.makeText(Showpedict.this,"Language is not supported",Toast.LENGTH_SHORT).show();
-                        }else{
+                        if (lang == TextToSpeech.LANG_MISSING_DATA || lang == TextToSpeech.LANG_NOT_SUPPORTED) {
+                            Toast.makeText(Showpedict.this, "Language is not supported", Toast.LENGTH_SHORT).show();
+                        } else {
                             //textToSpeech.speak(name.toString(),TextToSpeech.QUEUE_ADD,null);
                             //Toast.makeText(Showpedict.this,"Language Supported",Toast.LENGTH_SHORT).show();
                         }
@@ -131,7 +135,7 @@ public class Showpedict extends AppCompatActivity {
         Back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent Back = new Intent(Showpedict.this,MainActivity.class);
+                Intent Back = new Intent(Showpedict.this, MainActivity.class);
                 startActivity(Back);
             }
         });
@@ -142,7 +146,7 @@ public class Showpedict extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String name = new String(textNamefruitthai.getText().toString());
-                textToSpeechThai.speak(name,TextToSpeech.QUEUE_FLUSH,null);
+                textToSpeechThai.speak(name, TextToSpeech.QUEUE_FLUSH, null);
 
             }
         });
@@ -152,7 +156,7 @@ public class Showpedict extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String name = new String(textViewTitle.getText().toString());
-                textToSpeechEng.speak(name,TextToSpeech.QUEUE_FLUSH,null);
+                textToSpeechEng.speak(name, TextToSpeech.QUEUE_FLUSH, null);
             }
         });
     }

@@ -33,8 +33,8 @@ import java.nio.ByteOrder;
 
 public class MainActivity extends AppCompatActivity {
 
-   // Button selectBtn, predictBtn,cameraBtn;
-    ImageButton selectImageBtn,selectCameraBtn,selectPredictBtn;
+    // Button selectBtn, predictBtn,cameraBtn;
+    ImageButton selectImageBtn, selectCameraBtn, selectPredictBtn;
     Bitmap bitmap;
     ImageView imageView;
     int imageSize = 128;
@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent();
                 intent.setAction(Intent.ACTION_GET_CONTENT);
                 intent.setType("image/*");
-                startActivityForResult(intent,10);
+                startActivityForResult(intent, 10);
             }
         });
         //ถ่ายรูป
@@ -83,7 +83,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //ถ้าไม่มีรูปให้แสดง alert
-                if(bitmap == null){
+                if (bitmap == null) {
                     AlertDialog alert = new AlertDialog.Builder(MainActivity.this).create();
                     alert.setTitle("Image is Empty!!");
                     alert.setMessage("Put your image fruit.");
@@ -94,11 +94,11 @@ public class MainActivity extends AppCompatActivity {
                         }
                     });
                     alert.show();
-                    Log.i("alert","alert out");
+                    Log.i("alert", "alert out");
 
                     return;
                 }
-                Intent start = new Intent(MainActivity.this,Showpedict.class);
+                Intent start = new Intent(MainActivity.this, Showpedict.class);
                 int dimension = Math.min(bitmap.getWidth(), bitmap.getHeight());
                 bitmap = ThumbnailUtils.extractThumbnail(bitmap, dimension, dimension);
                 imageView.setImageBitmap(bitmap);
@@ -113,13 +113,13 @@ public class MainActivity extends AppCompatActivity {
                     byteBuffer.order(ByteOrder.nativeOrder());
 
                     // get 1D array of 128 * 128 pixels in image
-                    int [] intValues = new int[imageSize * imageSize];
+                    int[] intValues = new int[imageSize * imageSize];
                     bitmap.getPixels(intValues, 0, bitmap.getWidth(), 0, 0, bitmap.getWidth(), bitmap.getHeight());
 
                     // iterate over pixels and extract R, G, and B values. Add to bytebuffer.
                     int pixel = 0;
-                    for(int i = 0; i < imageSize; i++){
-                        for(int j = 0; j < imageSize; j++){
+                    for (int i = 0; i < imageSize; i++) {
+                        for (int j = 0; j < imageSize; j++) {
                             int val = intValues[pixel++]; // RGB
                             byteBuffer.putFloat(((val >> 16) & 0xFF) * (1.f / 255.f));
                             byteBuffer.putFloat(((val >> 8) & 0xFF) * (1.f / 255.f));
@@ -137,8 +137,8 @@ public class MainActivity extends AppCompatActivity {
                     // find the index of the class with the biggest confidence.
                     int maxPos = 0;
                     float maxConfidence = 0;
-                    for(int i = 0; i < confidences.length; i++){
-                        if(confidences[i] > maxConfidence){
+                    for (int i = 0; i < confidences.length; i++) {
+                        if (confidences[i] > maxConfidence) {
                             maxConfidence = confidences[i];
                             maxPos = i;
                         }
@@ -146,7 +146,7 @@ public class MainActivity extends AppCompatActivity {
 
                     //ถ้าค่าความแม่นยำน้อยกว่า 50% จะทำนายผิด
                     Log.i("predict", String.valueOf(confidences[maxPos]));
-                    if(confidences[maxPos] < 0.5f){
+                    if (confidences[maxPos] < 0.5f) {
                         AlertDialog alert = new AlertDialog.Builder(MainActivity.this).create();
                         alert.setTitle("Wrong Prediction");
                         alert.setMessage("Can't Predict");
@@ -157,7 +157,7 @@ public class MainActivity extends AppCompatActivity {
                             }
                         });
                         alert.show();
-                        Log.i("alert","alert out");
+                        Log.i("alert", "alert out");
 
                         return;
                     }
@@ -165,15 +165,13 @@ public class MainActivity extends AppCompatActivity {
                     Log.i("res", String.valueOf(maxPos));
 
                     // Releases model resources if no longer used.
-                    start.putExtra("id",String.valueOf(maxPos));
+                    start.putExtra("id", String.valueOf(maxPos));
                     startActivity(start);
                     model.close();
 
                 } catch (IOException e) {
                     // TODO Handle the exception
                 }
-
-
             }
         });
 
@@ -182,16 +180,17 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        Intent start = new Intent(MainActivity.this,Introapp.class);
+        Intent start = new Intent(MainActivity.this, Introapp.class);
         startActivity(start);
         super.onBackPressed();
     }
-    @RequiresApi(api = Build.VERSION_CODES.M)
-    void getPermission(){
 
-        if(Build.VERSION.SDK_INT == Build.VERSION_CODES.M){
-            if(checkSelfPermission(Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED){
-                ActivityCompat.requestPermissions(MainActivity.this, new String[] {Manifest.permission.CAMERA},11);
+    @RequiresApi(api = Build.VERSION_CODES.M)
+    void getPermission() {
+
+        if (Build.VERSION.SDK_INT == Build.VERSION_CODES.M) {
+            if (checkSelfPermission(Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED) {
+                ActivityCompat.requestPermissions(MainActivity.this, new String[]{Manifest.permission.CAMERA}, 11);
             }
         }
     }
@@ -199,9 +198,9 @@ public class MainActivity extends AppCompatActivity {
     @RequiresApi(api = Build.VERSION_CODES.M)
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
-        if(requestCode == 11){
-            if(grantResults.length > 0){
-                if(grantResults[0] != PackageManager.PERMISSION_GRANTED){
+        if (requestCode == 11) {
+            if (grantResults.length > 0) {
+                if (grantResults[0] != PackageManager.PERMISSION_GRANTED) {
                     this.getPermission();
                 }
             }
@@ -211,11 +210,11 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
-        if(requestCode == 10){
-            if(data!=null){
+        if (requestCode == 10) {
+            if (data != null) {
                 Uri uri = data.getData();
                 try {
-                    bitmap = MediaStore.Images.Media.getBitmap(this.getContentResolver(),uri);
+                    bitmap = MediaStore.Images.Media.getBitmap(this.getContentResolver(), uri);
                     int dimension = Math.min(bitmap.getWidth(), bitmap.getHeight());
                     bitmap = ThumbnailUtils.extractThumbnail(bitmap, dimension, dimension);
                     imageView.setImageBitmap(bitmap);
@@ -223,8 +222,7 @@ public class MainActivity extends AppCompatActivity {
                     e.printStackTrace();
                 }
             }
-        }
-        else if (requestCode == 12){
+        } else if (requestCode == 12) {
             bitmap = (Bitmap) data.getExtras().get("data");
             int dimension = Math.min(bitmap.getWidth(), bitmap.getHeight());
             bitmap = ThumbnailUtils.extractThumbnail(bitmap, dimension, dimension);
@@ -232,7 +230,6 @@ public class MainActivity extends AppCompatActivity {
         }
         super.onActivityResult(requestCode, resultCode, data);
     }
-
 
 
 }
