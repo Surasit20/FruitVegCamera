@@ -9,8 +9,8 @@
 
     <ImageView
         android:id="@+id/imageViewPredict"
-        android:layout_width="match_parent"
-        android:layout_height="345dp"
+        android:layout_width="500dp"
+        android:layout_height="385dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:src="@drawable/image_gallery" />
@@ -25,7 +25,7 @@
         android:text=""
         android:textAlignment="center"
         android:textColor="#000000"
-        android:textSize="30dp" />
+        android:textSize="50dp" />
 
     <TextView
         android:id="@+id/textReading"
@@ -37,7 +37,7 @@
         android:text=""
         android:textAlignment="center"
         android:textColor="#000000"
-        android:textSize="28dp" />
+        android:textSize="50dp" />
 
     <TextView
         android:id="@+id/textNamefruitthai"
@@ -49,12 +49,12 @@
         android:text=""
         android:textAlignment="center"
         android:textColor="#000000"
-        android:textSize="28dp" />
+        android:textSize="50dp" />
 
     <ImageButton
         android:id="@+id/imageButtonSoundEng"
-        android:layout_width="88dp"
-        android:layout_height="47dp"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
         android:layout_below="@+id/textTitle"
         android:layout_centerHorizontal="true"
         android:layout_marginLeft="10dp"
@@ -66,8 +66,8 @@
 
     <ImageButton
         android:id="@+id/imageButtonSoundThai"
-        android:layout_width="88dp"
-        android:layout_height="47dp"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
         android:layout_below="@+id/textReading"
         android:layout_centerHorizontal="true"
         android:layout_marginLeft="10dp"
@@ -79,8 +79,8 @@
 
     <ImageButton
         android:id="@+id/imageButtonBack"
-        android:layout_width="109dp"
-        android:layout_height="35dp"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
         android:layout_below="@+id/textNamefruitthai"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp"
