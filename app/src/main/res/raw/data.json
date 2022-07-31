@@ -1,18 +1,16 @@
 {
   "fruit": [
     {
-      "name": "Water Spinach",
-      "des": "(วอ'เทอะสพินนิจ)",
-      "nameThai": "ผักบุ้ง",
-      "image":"water_spinach_image"
-
+      "name": "Watermelon",
+      "des": "(วอ'เทอะเมลเลิน)",
+      "nameThai": "แตงโม",
+      "image":"watermelon_image"
     },
     {
       "name": "Tomato",
       "des": "(ทะเม'โท)",
       "nameThai": "มะเขือเทศ",
-      "image":"potato_image"
-
+      "image":"tomato_image"
     },
     {
       "name": "Strawberry",
@@ -84,11 +82,10 @@
 
     },
     {
-      "name": "Watermelon",
-      "des": "(วอ'เทอะเมลเลิน)",
-      "nameThai": "แตงโม",
-      "image":"watermelon_image"
-
+      "name": "Water Spinach",
+      "des": "(วอ'เทอะสพินนิจ)",
+      "nameThai": "ผักบุ้ง",
+      "image":"water_spinach_image"
     },
     {
       "name": "Coconut",

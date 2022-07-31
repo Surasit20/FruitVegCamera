@@ -21,13 +21,14 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="396dp"
-        android:layout_height="47dp"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
         android:layout_marginLeft="18dp"
+        android:layout_marginTop="20dp"
+        android:fontWeight="400"
         android:text="Fruits and Vegatables Camera"
-        android:textSize="28dp" />
+        android:textSize="25dp" />
 
     <ImageButton
         android:id="@+id/startbutton"
