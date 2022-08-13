@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FruitVegCamera">
         <activity
+            android:name=".Showdatafruit"
+            android:exported="true" />
+        <activity
             android:name=".Showpedict"
             android:exported="true" />
         <activity

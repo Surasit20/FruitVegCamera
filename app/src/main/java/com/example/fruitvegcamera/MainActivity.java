@@ -34,7 +34,7 @@ import java.nio.ByteOrder;
 public class MainActivity extends AppCompatActivity {
 
     // Button selectBtn, predictBtn,cameraBtn;
-    ImageButton selectImageBtn, selectCameraBtn, selectPredictBtn;
+    ImageButton selectImageBtn, selectCameraBtn, selectPredictBtn,ShowdatafruitBtn;
     Bitmap bitmap;
     ImageView imageView;
     int imageSize = 128;
@@ -50,10 +50,16 @@ public class MainActivity extends AppCompatActivity {
         selectImageBtn = findViewById(R.id.selectImageBtn);
         selectCameraBtn = findViewById(R.id.selectCameraBtn);
         selectPredictBtn = findViewById(R.id.selectPredictBtn);
-
+        ShowdatafruitBtn = findViewById(R.id.ShowdatafruitBtn);
         imageView = findViewById(R.id.imageView);
 
-
+        ShowdatafruitBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent ShowdatafruitBtn = new Intent(MainActivity.this, Showdatafruit.class);
+                startActivity(ShowdatafruitBtn);
+            }
+        });
         // เลือกรูปจากเกลรอรี่
         selectImageBtn.setOnClickListener(new View.OnClickListener() {
             @Override

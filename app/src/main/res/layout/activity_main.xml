@@ -10,9 +10,8 @@
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
-        android:layout_height="345dp"
+        android:layout_height="280dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
         android:src="@drawable/image_gallery" />
 
     <TableLayout
@@ -87,8 +86,43 @@
         android:layout_marginEnd="50dp"
         android:background="#ffa8d18d"
         android:scaleType="fitCenter"
-        android:src="@drawable/trans"
-        tools:ignore="SpeakableTextPresentCheck" />
+        android:src="@drawable/trans" />
+
+    <TableLayout
+        android:id="@+id/Tablelayout1"
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:layout_below="@+id/selectPredictBtn"
+        android:layout_marginTop="0dp"
+        android:gravity="center_horizontal">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal">
+
+            <ImageButton
+                android:id="@+id/howtouseBtn"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:background="#ffa8d18d"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_howtouse_th"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <ImageButton
+                android:id="@+id/ShowdatafruitBtn"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:background="#ffa8d18d"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_datafruit_th"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+        </TableRow>
+
+    </TableLayout>
 
     <!-- <Button
          android:id="@+id/selectBtn"
