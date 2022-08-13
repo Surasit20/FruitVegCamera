@@ -4,6 +4,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#ffa8d18d"
     tools:context=".Showdatafruit">
 
+    <ImageButton
+        android:id="@+id/imageFriut"
+        android:layout_width="135dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:background="#ffa8d18d"
+        android:scaleType="fitCenter"
+        android:src="@drawable/image_gallery"
+        tools:ignore="SpeakableTextPresentCheck" />
+    <TextView
+        android:id="@+id/namefruit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageFriut"
+        android:layout_toRightOf="@+id/textView2"
+        android:scaleType="fitCenter"
+        android:layout_centerHorizontal="true"
+        android:text="gfgfgf"
+        android:textAlignment="center" />
 </RelativeLayout>
