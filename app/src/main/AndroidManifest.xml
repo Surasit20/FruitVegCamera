@@ -12,9 +12,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FruitVegCamera">
         <activity
-            android:name=".Showdatafruitnextpage"
-            android:exported="false" />
-        <activity
             android:name=".Showdatafruit"
             android:exported="true" />
         <activity

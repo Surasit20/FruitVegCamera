@@ -145,7 +145,13 @@ public class Showpedict extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
+
+
                 String name = new String(textNamefruitthai.getText().toString());
+                if(name.equals("สตรอว์เบอร์รี")){
+                    name = "สะตอเบอร์รี่";
+                }
+
                 textToSpeechThai.speak(name, TextToSpeech.QUEUE_FLUSH, null);
 
             }
