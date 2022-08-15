@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,23 +7,869 @@
     android:background="#ffa8d18d"
     tools:context=".Showdatafruit">
 
-    <ImageButton
-        android:id="@+id/imageFriut"
-        android:layout_width="135dp"
-        android:layout_height="100dp"
-        android:layout_centerHorizontal="true"
-        android:background="#ffa8d18d"
-        android:scaleType="fitCenter"
-        android:src="@drawable/image_gallery"
-        tools:ignore="SpeakableTextPresentCheck" />
-    <TextView
-        android:id="@+id/namefruit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/imageFriut"
-        android:layout_toRightOf="@+id/textView2"
-        android:scaleType="fitCenter"
-        android:layout_centerHorizontal="true"
-        android:text="gfgfgf"
-        android:textAlignment="center" />
-</RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:rowCount="10"
+            android:columnCount="3"
+            android:layout_margin="5dp"
+            android:layout_gravity="center_horizontal"
+            android:columnOrderPreserved="false" >
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_margin="10dp"
+                >
+                <LinearLayout
+                    android:id="@+id/LinearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <TextView
+                        android:id="@+id/namefruit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/apple"
+                        android:scaleType="fitCenter"
+                        android:layout_centerHorizontal="true"
+                        android:text="แตงโม"
+                        android:textSize="15dp"
+                        android:textColor="@color/black"
+                        android:textAlignment="center">
+
+                    </TextView>
+                    <ImageButton
+                        android:id="@+id/Watermelon"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"
+                        android:background="grey"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/watermelon_image"
+                        tools:ignore="SpeakableTextPresentCheck">
+
+                    </ImageButton>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_margin="10dp"
+                >
+                <LinearLayout
+                    android:id="@+id/LinearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <TextView
+                        android:id="@+id/namefruit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitCenter"
+                        android:layout_centerHorizontal="true"
+                        android:text="มะเขือเทศ"
+                        android:textSize="15dp"
+                        android:textColor="@color/black"
+                        android:textAlignment="center">
+
+                    </TextView>
+                    <ImageButton
+                        android:id="@+id/tomato"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"
+                        android:background="grey"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/tomato_image"
+                        tools:ignore="SpeakableTextPresentCheck">
+
+                    </ImageButton>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_margin="10dp"
+                >
+                <LinearLayout
+                    android:id="@+id/LinearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <TextView
+                        android:id="@+id/namefruit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitCenter"
+                        android:layout_centerHorizontal="true"
+                        android:text="สตรอว์เบอร์รี"
+                        android:textSize="15dp"
+                        android:textColor="@color/black"
+                        android:textAlignment="center">
+
+                    </TextView>
+                    <ImageButton
+                        android:id="@+id/Strawberry"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"
+                        android:background="grey"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/strawberry_image"
+                        tools:ignore="SpeakableTextPresentCheck">
+
+                    </ImageButton>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_margin="10dp"
+                >
+                <LinearLayout
+                    android:id="@+id/LinearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <TextView
+                        android:id="@+id/namefruit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitCenter"
+                        android:layout_centerHorizontal="true"
+                        android:text="เงาะ"
+                        android:textSize="15dp"
+                        android:textColor="@color/black"
+                        android:textAlignment="center">
+
+                    </TextView>
+                    <ImageButton
+                        android:id="@+id/Rambutan"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"
+                        android:background="grey"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/rambutan_image"
+                        tools:ignore="SpeakableTextPresentCheck">
+
+                    </ImageButton>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_margin="10dp"
+                >
+                <LinearLayout
+                    android:id="@+id/LinearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <TextView
+                        android:id="@+id/namefruit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitCenter"
+                        android:layout_centerHorizontal="true"
+                        android:text="มะละกอ"
+                        android:textSize="15dp"
+                        android:textColor="@color/black"
+                        android:textAlignment="center">
+
+                    </TextView>
+                    <ImageButton
+                        android:id="@+id/Papaya"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"
+                        android:background="grey"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/papaya_image"
+                        tools:ignore="SpeakableTextPresentCheck">
+
+                    </ImageButton>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_margin="10dp"
+                >
+                <LinearLayout
+                    android:id="@+id/LinearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <TextView
+                        android:id="@+id/namefruit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitCenter"
+                        android:layout_centerHorizontal="true"
+                        android:text="มะม่วง"
+                        android:textSize="15dp"
+                        android:textColor="@color/black"
+                        android:textAlignment="center">
+
+                    </TextView>
+                    <ImageButton
+                        android:id="@+id/Mango"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"
+                        android:background="grey"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/mango_image"
+                        tools:ignore="SpeakableTextPresentCheck">
+
+                    </ImageButton>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_margin="10dp"
+                >
+                <LinearLayout
+                    android:id="@+id/LinearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <TextView
+                        android:id="@+id/namefruit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitCenter"
+                        android:layout_centerHorizontal="true"
+                        android:text="ฟักทอง"
+                        android:textSize="15dp"
+                        android:textColor="@color/black"
+                        android:textAlignment="center">
+
+                    </TextView>
+                    <ImageButton
+                        android:id="@+id/Pumpkin"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"
+                        android:background="grey"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/pumpkin_image"
+                        tools:ignore="SpeakableTextPresentCheck">
+
+                    </ImageButton>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_margin="10dp"
+                >
+                <LinearLayout
+                    android:id="@+id/LinearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <TextView
+                        android:id="@+id/namefruit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitCenter"
+                        android:layout_centerHorizontal="true"
+                        android:text="มันฝรั่ง"
+                        android:textSize="15dp"
+                        android:textColor="@color/black"
+                        android:textAlignment="center">
+
+                    </TextView>
+                    <ImageButton
+                        android:id="@+id/Potato"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"
+                        android:background="grey"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/potato_image"
+                        tools:ignore="SpeakableTextPresentCheck">
+
+                    </ImageButton>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_margin="10dp"
+                >
+                <LinearLayout
+                    android:id="@+id/LinearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <TextView
+                        android:id="@+id/namefruit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitCenter"
+                        android:layout_centerHorizontal="true"
+                        android:text="สัปปะรด"
+                        android:textSize="15dp"
+                        android:textColor="@color/black"
+                        android:textAlignment="center">
+
+                    </TextView>
+                    <ImageButton
+                        android:id="@+id/Pineapple"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"
+                        android:background="grey"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/pineapple_image"
+                        tools:ignore="SpeakableTextPresentCheck">
+
+                    </ImageButton>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_margin="10dp"
+                >
+                <LinearLayout
+                    android:id="@+id/LinearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <TextView
+                        android:id="@+id/namefruit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitCenter"
+                        android:layout_centerHorizontal="true"
+                        android:text="ส้ม"
+                        android:textSize="15dp"
+                        android:textColor="@color/black"
+                        android:textAlignment="center">
+
+                    </TextView>
+                    <ImageButton
+                        android:id="@+id/Orange"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"
+                        android:background="grey"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/orange_image"
+                        tools:ignore="SpeakableTextPresentCheck">
+
+                    </ImageButton>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_margin="10dp"
+                >
+                <LinearLayout
+                    android:id="@+id/LinearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <TextView
+                        android:id="@+id/namefruit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitCenter"
+                        android:layout_centerHorizontal="true"
+                        android:text="องุ่น"
+                        android:textSize="15dp"
+                        android:textColor="@color/black"
+                        android:textAlignment="center">
+
+                    </TextView>
+                    <ImageButton
+                        android:id="@+id/Grapes"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"
+                        android:background="grey"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/grapes_image"
+                        tools:ignore="SpeakableTextPresentCheck">
+
+                    </ImageButton>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_margin="10dp"
+                >
+                <LinearLayout
+                    android:id="@+id/LinearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <TextView
+                        android:id="@+id/namefruit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitCenter"
+                        android:layout_centerHorizontal="true"
+                        android:text="แตงกวา"
+                        android:textSize="15dp"
+                        android:textColor="@color/black"
+                        android:textAlignment="center">
+
+                    </TextView>
+                    <ImageButton
+                        android:id="@+id/Cucumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"
+                        android:background="grey"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/cucumber_image"
+                        tools:ignore="SpeakableTextPresentCheck">
+
+                    </ImageButton>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_margin="10dp"
+                >
+                <LinearLayout
+                    android:id="@+id/LinearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <TextView
+                        android:id="@+id/namefruit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitCenter"
+                        android:layout_centerHorizontal="true"
+                        android:text="ผักบุ้ง"
+                        android:textSize="15dp"
+                        android:textColor="@color/black"
+                        android:textAlignment="center">
+
+                    </TextView>
+                    <ImageButton
+                        android:id="@+id/WaterSpinach"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"
+                        android:background="grey"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/water_spinach_image"
+                        tools:ignore="SpeakableTextPresentCheck">
+
+                    </ImageButton>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_margin="10dp"
+                >
+                <LinearLayout
+                    android:id="@+id/LinearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <TextView
+                        android:id="@+id/namefruit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitCenter"
+                        android:layout_centerHorizontal="true"
+                        android:text="มะพร้าว"
+                        android:textSize="15dp"
+                        android:textColor="@color/black"
+                        android:textAlignment="center">
+
+                    </TextView>
+                    <ImageButton
+                        android:id="@+id/Coconut"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"
+                        android:background="grey"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/coconut_image"
+                        tools:ignore="SpeakableTextPresentCheck">
+
+                    </ImageButton>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_margin="10dp"
+                >
+                <LinearLayout
+                    android:id="@+id/LinearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <TextView
+                        android:id="@+id/namefruit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitCenter"
+                        android:layout_centerHorizontal="true"
+                        android:text="ผักกาดขาว"
+                        android:textSize="15dp"
+                        android:textColor="@color/black"
+                        android:textAlignment="center">
+
+                    </TextView>
+                    <ImageButton
+                        android:id="@+id/ChineseCabbage"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"
+                        android:background="grey"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/chinese_cabbage_image"
+                        tools:ignore="SpeakableTextPresentCheck">
+
+                    </ImageButton>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_margin="10dp"
+                >
+                <LinearLayout
+                    android:id="@+id/LinearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <TextView
+                        android:id="@+id/namefruit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitCenter"
+                        android:layout_centerHorizontal="true"
+                        android:text="แครอท"
+                        android:textSize="15dp"
+                        android:textColor="@color/black"
+                        android:textAlignment="center">
+
+                    </TextView>
+                    <ImageButton
+                        android:id="@+id/Carrot"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"
+                        android:background="grey"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/carrot_image"
+                        tools:ignore="SpeakableTextPresentCheck">
+
+                    </ImageButton>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_margin="10dp"
+                >
+                <LinearLayout
+                    android:id="@+id/LinearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <TextView
+                        android:id="@+id/namefruit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitCenter"
+                        android:layout_centerHorizontal="true"
+                        android:text="กะหล่ำปี"
+                        android:textSize="15dp"
+                        android:textColor="@color/black"
+                        android:textAlignment="center">
+
+                    </TextView>
+                    <ImageButton
+                        android:id="@+id/Cabbage"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"
+                        android:background="grey"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/cabbage_image"
+                        tools:ignore="SpeakableTextPresentCheck">
+
+                    </ImageButton>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_margin="10dp"
+                >
+                <LinearLayout
+                    android:id="@+id/LinearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <TextView
+                        android:id="@+id/namefruit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitCenter"
+                        android:layout_centerHorizontal="true"
+                        android:text="กล้วย"
+                        android:textSize="15dp"
+                        android:textColor="@color/black"
+                        android:textAlignment="center">
+
+                    </TextView>
+                    <ImageButton
+                        android:id="@+id/Banana"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"
+                        android:background="grey"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/banana_image"
+                        tools:ignore="SpeakableTextPresentCheck">
+
+                    </ImageButton>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_margin="10dp"
+                >
+                <LinearLayout
+                    android:id="@+id/LinearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <TextView
+                        android:id="@+id/namefruit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitCenter"
+                        android:layout_centerHorizontal="true"
+                        android:text="บรอคโคลี่"
+                        android:textSize="15dp"
+                        android:textColor="@color/black"
+                        android:textAlignment="center">
+
+                    </TextView>
+                    <ImageButton
+                        android:id="@+id/Broccoli"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"
+                        android:background="grey"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/broccoli_image"
+                        tools:ignore="SpeakableTextPresentCheck">
+
+                    </ImageButton>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_margin="10dp"
+                >
+                <LinearLayout
+                    android:id="@+id/LinearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <TextView
+                        android:id="@+id/namefruit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitCenter"
+                        android:layout_centerHorizontal="true"
+                        android:text="แอปเปิ้ล"
+                        android:textSize="15dp"
+                        android:textColor="@color/black"
+                        android:textAlignment="center">
+
+                    </TextView>
+                    <ImageButton
+                        android:id="@+id/Apple"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"
+                        android:background="grey"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/apple_image"
+                        tools:ignore="SpeakableTextPresentCheck">
+
+                    </ImageButton>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+           </GridLayout>
+
+    </LinearLayout>
+</ScrollView>
