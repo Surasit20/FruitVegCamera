@@ -1,5 +1,6 @@
 package com.example.fruitvegcamera;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
@@ -38,125 +39,147 @@ public class Showdatafruit extends AppCompatActivity {
         Broccoli = findViewById(R.id.Broccoli);
         Apple = findViewById(R.id.Apple);
 
+        Intent start = new Intent(Showdatafruit.this, Showpedict.class);
 
         Watermelon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
+                start.putExtra("id", String.valueOf(0));
+                startActivity(start);
             }
         });
         tomato.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                start.putExtra("id", String.valueOf(1));
+                startActivity(start);
             }
         });
         Strawberry.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                start.putExtra("id", String.valueOf(2));
+                startActivity(start);
             }
         });
         Rambutan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                start.putExtra("id", String.valueOf(3));
+                startActivity(start);
             }
         });
         Papaya.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                start.putExtra("id", String.valueOf(4));
+                startActivity(start);
             }
         });
         Mango.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                start.putExtra("id", String.valueOf(5));
+                startActivity(start);
             }
         });
         Pumpkin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                start.putExtra("id", String.valueOf(6));
+                startActivity(start);
             }
         });
         Potato.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                start.putExtra("id", String.valueOf(7));
+                startActivity(start);
             }
         });
         Pineapple.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                start.putExtra("id", String.valueOf(8));
+                startActivity(start);
             }
         });
        Orange.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                start.putExtra("id", String.valueOf(9));
+                startActivity(start);
             }
         });
         Grapes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                start.putExtra("id", String.valueOf(10));
+                startActivity(start);
             }
         });
         Cucumber.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                start.putExtra("id", String.valueOf(11));
+                startActivity(start);
             }
         });
         WaterSpinach.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                start.putExtra("id", String.valueOf(12));
+                startActivity(start);
             }
         });
         Coconut.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                start.putExtra("id", String.valueOf(13));
+                startActivity(start);
             }
         });
         ChineseCabbage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                start.putExtra("id", String.valueOf(14));
+                startActivity(start);
             }
         });
         Carrot.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                start.putExtra("id", String.valueOf(15));
+                startActivity(start);
             }
         });
         Cabbage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                start.putExtra("id", String.valueOf(16));
+                startActivity(start);
             }
         });
         Banana.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                start.putExtra("id", String.valueOf(17));
+                startActivity(start);
             }
         });
        Broccoli.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                start.putExtra("id", String.valueOf(8));
+                startActivity(start);
             }
         });
         Apple.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                start.putExtra("id", String.valueOf(19));
+                startActivity(start);
             }
         });
 
