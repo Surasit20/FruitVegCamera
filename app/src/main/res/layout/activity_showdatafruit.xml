@@ -30,13 +30,11 @@
                 android:layout_margin="10dp"
                 >
                 <LinearLayout
-                    android:id="@+id/LinearLayout"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
                     android:gravity="center">
                     <TextView
-                        android:id="@+id/namefruit"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/apple"
@@ -53,7 +51,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_centerHorizontal="true"
-                        android:background="grey"
+                        android:background="@color/white"
                         android:scaleType="fitCenter"
                         android:src="@drawable/watermelon_image"
                         tools:ignore="SpeakableTextPresentCheck">
@@ -74,13 +72,13 @@
                 android:layout_margin="10dp"
                 >
                 <LinearLayout
-                    android:id="@+id/LinearLayout"
+
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
                     android:gravity="center">
                     <TextView
-                        android:id="@+id/namefruit"
+
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:scaleType="fitCenter"
@@ -96,7 +94,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_centerHorizontal="true"
-                        android:background="grey"
+                        android:background="@color/white"
                         android:scaleType="fitCenter"
                         android:src="@drawable/tomato_image"
                         tools:ignore="SpeakableTextPresentCheck">
@@ -116,13 +114,13 @@
                 android:layout_margin="10dp"
                 >
                 <LinearLayout
-                    android:id="@+id/LinearLayout"
+
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
                     android:gravity="center">
                     <TextView
-                        android:id="@+id/namefruit"
+
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:scaleType="fitCenter"
@@ -138,7 +136,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_centerHorizontal="true"
-                        android:background="grey"
+                        android:background="@color/white"
                         android:scaleType="fitCenter"
                         android:src="@drawable/strawberry_image"
                         tools:ignore="SpeakableTextPresentCheck">
@@ -158,13 +156,13 @@
                 android:layout_margin="10dp"
                 >
                 <LinearLayout
-                    android:id="@+id/LinearLayout"
+
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
                     android:gravity="center">
                     <TextView
-                        android:id="@+id/namefruit"
+
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:scaleType="fitCenter"
@@ -180,7 +178,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_centerHorizontal="true"
-                        android:background="grey"
+                        android:background="@color/white"
                         android:scaleType="fitCenter"
                         android:src="@drawable/rambutan_image"
                         tools:ignore="SpeakableTextPresentCheck">
@@ -200,13 +198,13 @@
                 android:layout_margin="10dp"
                 >
                 <LinearLayout
-                    android:id="@+id/LinearLayout"
+
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
                     android:gravity="center">
                     <TextView
-                        android:id="@+id/namefruit"
+
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:scaleType="fitCenter"
@@ -222,7 +220,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_centerHorizontal="true"
-                        android:background="grey"
+                        android:background="@color/white"
                         android:scaleType="fitCenter"
                         android:src="@drawable/papaya_image"
                         tools:ignore="SpeakableTextPresentCheck">
@@ -242,13 +240,13 @@
                 android:layout_margin="10dp"
                 >
                 <LinearLayout
-                    android:id="@+id/LinearLayout"
+
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
                     android:gravity="center">
                     <TextView
-                        android:id="@+id/namefruit"
+
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:scaleType="fitCenter"
@@ -264,7 +262,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_centerHorizontal="true"
-                        android:background="grey"
+                        android:background="@color/white"
                         android:scaleType="fitCenter"
                         android:src="@drawable/mango_image"
                         tools:ignore="SpeakableTextPresentCheck">
@@ -291,7 +289,7 @@
                     android:orientation="vertical"
                     android:gravity="center">
                     <TextView
-                        android:id="@+id/namefruit"
+
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:scaleType="fitCenter"
@@ -307,7 +305,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_centerHorizontal="true"
-                        android:background="grey"
+                        android:background="@color/white"
                         android:scaleType="fitCenter"
                         android:src="@drawable/pumpkin_image"
                         tools:ignore="SpeakableTextPresentCheck">
@@ -327,13 +325,13 @@
                 android:layout_margin="10dp"
                 >
                 <LinearLayout
-                    android:id="@+id/LinearLayout"
+
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
                     android:gravity="center">
                     <TextView
-                        android:id="@+id/namefruit"
+
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:scaleType="fitCenter"
@@ -349,7 +347,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_centerHorizontal="true"
-                        android:background="grey"
+                        android:background="@color/white"
                         android:scaleType="fitCenter"
                         android:src="@drawable/potato_image"
                         tools:ignore="SpeakableTextPresentCheck">
@@ -369,13 +367,13 @@
                 android:layout_margin="10dp"
                 >
                 <LinearLayout
-                    android:id="@+id/LinearLayout"
+
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
                     android:gravity="center">
                     <TextView
-                        android:id="@+id/namefruit"
+
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:scaleType="fitCenter"
@@ -391,7 +389,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_centerHorizontal="true"
-                        android:background="grey"
+                        android:background="@color/white"
                         android:scaleType="fitCenter"
                         android:src="@drawable/pineapple_image"
                         tools:ignore="SpeakableTextPresentCheck">
@@ -412,13 +410,13 @@
                 android:layout_margin="10dp"
                 >
                 <LinearLayout
-                    android:id="@+id/LinearLayout"
+
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
                     android:gravity="center">
                     <TextView
-                        android:id="@+id/namefruit"
+
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:scaleType="fitCenter"
@@ -434,7 +432,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_centerHorizontal="true"
-                        android:background="grey"
+                        android:background="@color/white"
                         android:scaleType="fitCenter"
                         android:src="@drawable/orange_image"
                         tools:ignore="SpeakableTextPresentCheck">
@@ -454,13 +452,13 @@
                 android:layout_margin="10dp"
                 >
                 <LinearLayout
-                    android:id="@+id/LinearLayout"
+
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
                     android:gravity="center">
                     <TextView
-                        android:id="@+id/namefruit"
+
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:scaleType="fitCenter"
@@ -476,7 +474,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_centerHorizontal="true"
-                        android:background="grey"
+                        android:background="@color/white"
                         android:scaleType="fitCenter"
                         android:src="@drawable/grapes_image"
                         tools:ignore="SpeakableTextPresentCheck">
@@ -496,13 +494,13 @@
                 android:layout_margin="10dp"
                 >
                 <LinearLayout
-                    android:id="@+id/LinearLayout"
+
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
                     android:gravity="center">
                     <TextView
-                        android:id="@+id/namefruit"
+
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:scaleType="fitCenter"
@@ -518,7 +516,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_centerHorizontal="true"
-                        android:background="grey"
+                        android:background="@color/white"
                         android:scaleType="fitCenter"
                         android:src="@drawable/cucumber_image"
                         tools:ignore="SpeakableTextPresentCheck">
@@ -540,13 +538,13 @@
                 android:layout_margin="10dp"
                 >
                 <LinearLayout
-                    android:id="@+id/LinearLayout"
+
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
                     android:gravity="center">
                     <TextView
-                        android:id="@+id/namefruit"
+
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:scaleType="fitCenter"
@@ -562,7 +560,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_centerHorizontal="true"
-                        android:background="grey"
+                        android:background="@color/white"
                         android:scaleType="fitCenter"
                         android:src="@drawable/water_spinach_image"
                         tools:ignore="SpeakableTextPresentCheck">
@@ -582,13 +580,13 @@
                 android:layout_margin="10dp"
                 >
                 <LinearLayout
-                    android:id="@+id/LinearLayout"
+
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
                     android:gravity="center">
                     <TextView
-                        android:id="@+id/namefruit"
+
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:scaleType="fitCenter"
@@ -604,7 +602,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_centerHorizontal="true"
-                        android:background="grey"
+                        android:background="@color/white"
                         android:scaleType="fitCenter"
                         android:src="@drawable/coconut_image"
                         tools:ignore="SpeakableTextPresentCheck">
@@ -624,13 +622,13 @@
                 android:layout_margin="10dp"
                 >
                 <LinearLayout
-                    android:id="@+id/LinearLayout"
+
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
                     android:gravity="center">
                     <TextView
-                        android:id="@+id/namefruit"
+
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:scaleType="fitCenter"
@@ -646,7 +644,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_centerHorizontal="true"
-                        android:background="grey"
+                        android:background="@color/white"
                         android:scaleType="fitCenter"
                         android:src="@drawable/chinese_cabbage_image"
                         tools:ignore="SpeakableTextPresentCheck">
@@ -666,13 +664,13 @@
                 android:layout_margin="10dp"
                 >
                 <LinearLayout
-                    android:id="@+id/LinearLayout"
+
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
                     android:gravity="center">
                     <TextView
-                        android:id="@+id/namefruit"
+
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:scaleType="fitCenter"
@@ -688,7 +686,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_centerHorizontal="true"
-                        android:background="grey"
+                        android:background="@color/white"
                         android:scaleType="fitCenter"
                         android:src="@drawable/carrot_image"
                         tools:ignore="SpeakableTextPresentCheck">
@@ -708,13 +706,13 @@
                 android:layout_margin="10dp"
                 >
                 <LinearLayout
-                    android:id="@+id/LinearLayout"
+
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
                     android:gravity="center">
                     <TextView
-                        android:id="@+id/namefruit"
+
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:scaleType="fitCenter"
@@ -730,7 +728,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_centerHorizontal="true"
-                        android:background="grey"
+                        android:background="@color/white"
                         android:scaleType="fitCenter"
                         android:src="@drawable/cabbage_image"
                         tools:ignore="SpeakableTextPresentCheck">
@@ -750,13 +748,13 @@
                 android:layout_margin="10dp"
                 >
                 <LinearLayout
-                    android:id="@+id/LinearLayout"
+
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
                     android:gravity="center">
                     <TextView
-                        android:id="@+id/namefruit"
+
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:scaleType="fitCenter"
@@ -772,7 +770,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_centerHorizontal="true"
-                        android:background="grey"
+                        android:background="@color/white"
                         android:scaleType="fitCenter"
                         android:src="@drawable/banana_image"
                         tools:ignore="SpeakableTextPresentCheck">
@@ -792,13 +790,13 @@
                 android:layout_margin="10dp"
                 >
                 <LinearLayout
-                    android:id="@+id/LinearLayout"
+
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
                     android:gravity="center">
                     <TextView
-                        android:id="@+id/namefruit"
+
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:scaleType="fitCenter"
@@ -814,7 +812,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_centerHorizontal="true"
-                        android:background="grey"
+                        android:background="@color/white"
                         android:scaleType="fitCenter"
                         android:src="@drawable/broccoli_image"
                         tools:ignore="SpeakableTextPresentCheck">
@@ -834,13 +832,13 @@
                 android:layout_margin="10dp"
                 >
                 <LinearLayout
-                    android:id="@+id/LinearLayout"
+
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
                     android:gravity="center">
                     <TextView
-                        android:id="@+id/namefruit"
+
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:scaleType="fitCenter"
@@ -856,7 +854,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_centerHorizontal="true"
-                        android:background="grey"
+                        android:background="@color/white"
                         android:scaleType="fitCenter"
                         android:src="@drawable/apple_image"
                         tools:ignore="SpeakableTextPresentCheck">
