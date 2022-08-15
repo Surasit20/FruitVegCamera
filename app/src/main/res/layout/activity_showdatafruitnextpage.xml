@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffa8d18d"
+    tools:context=".Showdatafruitnextpage">
+    <ImageView
+        android:id="@+id/imageViewDatafruit"
+        android:layout_width="match_parent"
+        android:layout_height="345dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/image_gallery" />
+
+    <TextView
+        android:id="@+id/textTitledata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageViewDatafruit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/textNameEng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textTitledata"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="28dp" />
+
+    <TextView
+        android:id="@+id/textNamethai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textNameEng"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="28dp" />
+
+    <ImageButton
+        android:id="@+id/ButtonSoundEng"
+        android:layout_width="88dp"
+        android:layout_height="47dp"
+        android:layout_below="@+id/textNameEng"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="12dp"
+        android:layout_toRightOf="@+id/textNameEng"
+        android:background="#ffa8d18d"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/ic_speaker" />
+
+    <ImageButton
+        android:id="@+id/ButtonSoundThai"
+        android:layout_width="88dp"
+        android:layout_height="47dp"
+        android:layout_below="@+id/textNamethai"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="12dp"
+        android:layout_toRightOf="@+id/textNamethai"
+        android:background="#ffa8d18d"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/ic_speaker" />
+
+    <ImageButton
+        android:id="@+id/ButtonBack"
+        android:layout_width="109dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/textNamethai"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="#ffa8d18d"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/ic_back" />
+</RelativeLayout>
