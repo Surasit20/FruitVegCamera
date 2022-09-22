@@ -27,10 +27,20 @@
         android:layout_marginLeft="18dp"
         android:layout_marginTop="20dp"
         android:fontWeight="400"
-        android:text="แอปพลิเคชันฝึกฝนคําศัพท์ภาษาอังกฤษหมวดผักและผลไม้"
-        android:textSize="25.5dp"
-        android:textColor="@color/black"/>
-
+        android:text="แอปพลิเคชันฝึกฝนคําศัพท์ภาษา"
+        android:textColor="@color/black"
+        android:textSize="25.5dp" />
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="60dp"
+        android:fontWeight="400"
+        android:text="อังกฤษหมวดผักและผลไม้"
+        android:textColor="@color/black"
+        android:textSize="25.5dp" />
     <ImageButton
         android:id="@+id/startbutton"
         android:layout_width="192dp"

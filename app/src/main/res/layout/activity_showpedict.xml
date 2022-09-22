@@ -10,7 +10,7 @@
     <ImageView
         android:id="@+id/imageViewPredict"
         android:layout_width="match_parent"
-        android:layout_height="345dp"
+        android:layout_height="280dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:src="@drawable/image_gallery" />
@@ -29,7 +29,7 @@
 
     <TextView
         android:id="@+id/textReading"
-        android:layout_width="wrap_content"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textTitle"
         android:layout_centerHorizontal="true"
@@ -41,7 +41,7 @@
 
     <TextView
         android:id="@+id/textNamefruitthai"
-        android:layout_width="wrap_content"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textReading"
         android:layout_centerHorizontal="true"
@@ -53,24 +53,24 @@
 
     <ImageButton
         android:id="@+id/imageButtonSoundEng"
-        android:layout_width="88dp"
+        android:layout_width="50dp"
         android:layout_height="47dp"
         android:layout_below="@+id/textTitle"
         android:layout_centerHorizontal="true"
-        android:layout_marginLeft="10dp"
+        android:layout_marginLeft="12dp"
         android:layout_marginTop="12dp"
-        android:layout_toRightOf="@+id/textTitle"
+        android:layout_toRightOf="@+id/textReading"
         android:background="#ffa8d18d"
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/ic_speaker" />
 
     <ImageButton
         android:id="@+id/imageButtonSoundThai"
-        android:layout_width="88dp"
+        android:layout_width="50dp"
         android:layout_height="47dp"
         android:layout_below="@+id/textReading"
         android:layout_centerHorizontal="true"
-        android:layout_marginLeft="10dp"
+        android:layout_marginLeft="12dp"
         android:layout_marginTop="12dp"
         android:layout_toRightOf="@+id/textNamefruitthai"
         android:background="#ffa8d18d"
@@ -83,7 +83,7 @@
         android:layout_height="35dp"
         android:layout_below="@+id/textNamefruitthai"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
         android:background="#ffa8d18d"
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/ic_back" />

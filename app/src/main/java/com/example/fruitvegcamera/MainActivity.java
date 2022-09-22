@@ -91,9 +91,9 @@ public class MainActivity extends AppCompatActivity {
                 //ถ้าไม่มีรูปให้แสดง alert
                 if (bitmap == null) {
                     AlertDialog alert = new AlertDialog.Builder(MainActivity.this).create();
-                    alert.setTitle("Image is Empty!!");
-                    alert.setMessage("Put your image fruit.");
-                    alert.setButton(alert.BUTTON_NEUTRAL, "OK", new DialogInterface.OnClickListener() {
+                    alert.setTitle("ผู้ใช้กรุณาถ่ายภาพ หรือ เลือกรูปภาพ!!");
+                    alert.setMessage("ถ่ายรูปผลไม้ หรือ เลือกรูปภาพผลไม้.");
+                    alert.setButton(alert.BUTTON_NEUTRAL, "ตกลง", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
                             alert.dismiss();
@@ -154,9 +154,9 @@ public class MainActivity extends AppCompatActivity {
                     Log.i("predict", String.valueOf(confidences[maxPos]));
                     if (confidences[maxPos] < 0.5f) {
                         AlertDialog alert = new AlertDialog.Builder(MainActivity.this).create();
-                        alert.setTitle("Wrong Prediction");
-                        alert.setMessage("Can't Predict");
-                        alert.setButton(alert.BUTTON_NEUTRAL, "OK", new DialogInterface.OnClickListener() {
+                        alert.setTitle("การทำนายผลไม้ผิดพลาด!!");
+                        alert.setMessage("ไม่สามารถทำนายได้!!");
+                        alert.setButton(alert.BUTTON_NEUTRAL, "ตกลง", new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
                                 alert.dismiss();

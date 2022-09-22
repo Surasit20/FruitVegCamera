@@ -11,6 +11,7 @@
         android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="280dp"
+        android:layout_marginTop="20dp"
         android:layout_centerHorizontal="true"
         android:src="@drawable/image_gallery" />
 
@@ -59,6 +60,7 @@
                 android:layout_below="@+id/selectCameraBtn"
                 android:background="#ffa8d18d"
                 android:scaleType="fitCenter"
+                android:textColor="@color/black"
                 android:text="กล้องถ่ายรูป"
                 android:textAlignment="center" />
 
@@ -68,6 +70,7 @@
                 android:layout_below="@+id/selectImageBtn"
                 android:layout_toRightOf="@+id/textView2"
                 android:background="#ffa8d18d"
+                android:textColor="@color/black"
                 android:scaleType="fitCenter"
                 android:text="แกลเลอรี่ภาพ"
                 android:textAlignment="center" />
@@ -83,7 +86,7 @@
         android:layout_marginStart="50dp"
         android:layout_marginLeft="50px"
         android:layout_marginTop="50dp"
-        android:layout_marginEnd="50dp"
+        android:layout_marginEnd="0dp"
         android:background="#ffa8d18d"
         android:scaleType="fitCenter"
         android:src="@drawable/trans" />
@@ -98,7 +101,7 @@
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="50dp"
             android:layout_centerHorizontal="true"
             android:gravity="center_horizontal">
 
@@ -108,6 +111,7 @@
                 android:layout_height="100dp"
                 android:background="#ffa8d18d"
                 android:scaleType="fitCenter"
+                android:layout_marginBottom="10dp"
                 android:src="@drawable/ic_howtouse_th"
                 tools:ignore="SpeakableTextPresentCheck" />
 

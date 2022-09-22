@@ -27,18 +27,16 @@
 
     },
     {
+      "name": "Coconut",
+      "des": "(โคโค'นัท)",
+      "nameThai": "มะพร้าว",
+      "image":"coconut_image"
+    },
+    {
       "name": "Papaya",
       "des": "(พะพา'ยะ)",
       "nameThai": "มะละกอ",
       "image":"papaya_image"
-
-    },
-    {
-      "name": "Mango",
-      "des": "(แมง'โก)",
-      "nameThai": "มะม่วง",
-      "image":"mango_image"
-
     },
     {
       "name": "Pumpkin",
@@ -88,52 +86,48 @@
       "image":"water_spinach_image"
     },
     {
-      "name": "Coconut",
-      "des": "(โคโค'นัท)",
-      "nameThai": "มะพร้าว",
-      "image":"coconut_image"
+      "name": "Mango",
+      "des": "(แมง'โก)",
+      "nameThai": "มะม่วง",
+      "image":"mango_image"
+
     },
     {
       "name": "Chinese Cabbage",
       "des": "(ไชนิสแคบ'บิจฺ)",
       "nameThai": "ผักกาดขาว",
       "image":"chinese_cabbage_image"
-
     },
     {
       "name": "Carrot",
       "des": "(แค'เริท)",
       "nameThai": "แครอท",
       "image":"carrot_image"
-
     },
     {
       "name": "Cabbage",
       "des": "(แคบ'บิจฺ)",
       "nameThai": "กะหล่ำปลี",
       "image":"cabbage_image"
-
     },
     {
       "name": "Banana",
       "des": "(บะแนน'นะ)",
       "nameThai": "กล้วย",
       "image":"banana_image"
-
     },
     {
       "name": "Broccoli",
       "des": "(บรอค'คะลี)",
       "nameThai": "บรอคโคลี่",
       "image":"broccoli_image"
-
     },
     {
+
       "name": "Apple",
       "des": "(แอพ' เพิล)",
       "nameThai": "แอปเปิ้ล",
       "image":"apple_image"
-
     }
   ]
 }
