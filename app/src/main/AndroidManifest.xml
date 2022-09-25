@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FruitVegCamera">
         <activity
+            android:name=".Imageslideuse"
+            android:exported="false" />
+        <activity
+            android:name=".Howtouseslide"
+            android:exported="false" />
+        <activity
             android:name=".Showhowtouse"
             android:exported="false" />
         <activity

@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
         howtouseBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent howtouseBtn = new Intent(MainActivity.this, Showhowtouse.class);
+                Intent howtouseBtn = new Intent(MainActivity.this, Imageslideuse.class);
                 startActivity(howtouseBtn);
             }
         });

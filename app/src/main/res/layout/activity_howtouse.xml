@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
+android:background="#FFFFFF"
     tools:context=".Howtouse">
 
     <ImageView
@@ -47,7 +47,7 @@
         android:layout_below="@+id/textHowtouse"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
-        android:background="@color/white"
+        android:background="#FFFFFF"
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/ic_back" />
 </RelativeLayout>

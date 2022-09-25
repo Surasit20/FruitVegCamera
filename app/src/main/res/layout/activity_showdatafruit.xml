@@ -10,15 +10,17 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        >
 
         <GridLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:rowCount="10"
             android:columnCount="3"
-            android:layout_margin="5dp"
+            android:layout_marginLeft="10dp"
             android:layout_gravity="center_horizontal"
+
             android:columnOrderPreserved="false" >
 
             <androidx.cardview.widget.CardView
@@ -26,8 +28,9 @@
                 android:layout_height="100dp"
                 app:cardCornerRadius="12dp"
                 app:cardElevation="10dp"
-                android:layout_marginLeft="5dp"
+                android:layout_marginLeft="10dp"
                 android:layout_margin="10dp"
+                android:background="#FFFFFF"
                 >
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -43,6 +46,7 @@
                         android:text="แตงโม"
                         android:textSize="15dp"
                         android:textColor="@color/black"
+
                         android:textAlignment="center">
 
                     </TextView>
@@ -70,6 +74,7 @@
                 app:cardElevation="10dp"
                 android:layout_marginLeft="10dp"
                 android:layout_margin="10dp"
+                android:background="#FFFFFF"
                 >
                 <LinearLayout
 
@@ -112,6 +117,7 @@
                 app:cardElevation="10dp"
                 android:layout_marginLeft="10dp"
                 android:layout_margin="10dp"
+                android:background="#FFFFFF"
                 >
                 <LinearLayout
 
@@ -154,6 +160,7 @@
                 app:cardElevation="10dp"
                 android:layout_marginLeft="5dp"
                 android:layout_margin="10dp"
+                android:background="#FFFFFF"
                 >
                 <LinearLayout
 
@@ -196,6 +203,7 @@
                 app:cardElevation="10dp"
                 android:layout_marginLeft="10dp"
                 android:layout_margin="10dp"
+                android:background="#FFFFFF"
                 >
                 <LinearLayout
 
@@ -238,6 +246,7 @@
                 app:cardElevation="10dp"
                 android:layout_marginLeft="10dp"
                 android:layout_margin="10dp"
+                android:background="#FFFFFF"
                 >
                 <LinearLayout
 
@@ -281,6 +290,7 @@
                 app:cardElevation="10dp"
                 android:layout_marginLeft="5dp"
                 android:layout_margin="10dp"
+                android:background="#FFFFFF"
                 >
                 <LinearLayout
                     android:id="@+id/LinearLayout"
@@ -323,6 +333,7 @@
                 app:cardElevation="10dp"
                 android:layout_marginLeft="10dp"
                 android:layout_margin="10dp"
+                android:background="#FFFFFF"
                 >
                 <LinearLayout
 
@@ -365,6 +376,7 @@
                 app:cardElevation="10dp"
                 android:layout_marginLeft="10dp"
                 android:layout_margin="10dp"
+                android:background="#FFFFFF"
                 >
                 <LinearLayout
 
@@ -408,6 +420,7 @@
                 app:cardElevation="10dp"
                 android:layout_marginLeft="5dp"
                 android:layout_margin="10dp"
+                android:background="#FFFFFF"
                 >
                 <LinearLayout
 
@@ -450,6 +463,7 @@
                 app:cardElevation="10dp"
                 android:layout_marginLeft="10dp"
                 android:layout_margin="10dp"
+                android:background="#FFFFFF"
                 >
                 <LinearLayout
 
@@ -492,6 +506,7 @@
                 app:cardElevation="10dp"
                 android:layout_marginLeft="10dp"
                 android:layout_margin="10dp"
+                android:background="#FFFFFF"
                 >
                 <LinearLayout
 
@@ -536,6 +551,7 @@
                 app:cardElevation="10dp"
                 android:layout_marginLeft="5dp"
                 android:layout_margin="10dp"
+                android:background="#FFFFFF"
                 >
                 <LinearLayout
 
@@ -578,6 +594,7 @@
                 app:cardElevation="10dp"
                 android:layout_marginLeft="10dp"
                 android:layout_margin="10dp"
+                android:background="#FFFFFF"
                 >
                 <LinearLayout
 
@@ -620,6 +637,7 @@
                 app:cardElevation="10dp"
                 android:layout_marginLeft="10dp"
                 android:layout_margin="10dp"
+                android:background="#FFFFFF"
                 >
                 <LinearLayout
 
@@ -662,6 +680,7 @@
                 app:cardElevation="10dp"
                 android:layout_marginLeft="5dp"
                 android:layout_margin="10dp"
+                android:background="#FFFFFF"
                 >
                 <LinearLayout
 
@@ -704,6 +723,7 @@
                 app:cardElevation="10dp"
                 android:layout_marginLeft="10dp"
                 android:layout_margin="10dp"
+                android:background="#FFFFFF"
                 >
                 <LinearLayout
 
@@ -746,6 +766,7 @@
                 app:cardElevation="10dp"
                 android:layout_marginLeft="10dp"
                 android:layout_margin="10dp"
+                android:background="#FFFFFF"
                 >
                 <LinearLayout
 
@@ -788,6 +809,7 @@
                 app:cardElevation="10dp"
                 android:layout_marginLeft="5dp"
                 android:layout_margin="10dp"
+                android:background="#FFFFFF"
                 >
                 <LinearLayout
 
@@ -830,6 +852,7 @@
                 app:cardElevation="10dp"
                 android:layout_marginLeft="10dp"
                 android:layout_margin="10dp"
+                android:background="#FFFFFF"
                 >
                 <LinearLayout
 
