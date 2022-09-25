@@ -12,6 +12,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FruitVegCamera">
         <activity
+            android:name=".Showhowtouse"
+            android:exported="false" />
+        <activity
+            android:name=".Howtouse"
+            android:exported="false"
+            android:label="@string/title_activity_howtouse"
+            android:theme="@style/Theme.FruitVegCamera.NoActionBar" />
+        <activity
             android:name=".Showdatafruit"
             android:exported="true" />
         <activity

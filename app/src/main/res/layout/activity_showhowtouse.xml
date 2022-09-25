@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffa8d18d"
+    tools:context=".Showhowtouse">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:rowCount="10"
+            android:columnCount="3"
+            android:layout_margin="5dp"
+            android:layout_gravity="center_horizontal"
+            android:columnOrderPreserved="false" >
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_margin="10dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/apple"
+                        android:layout_centerHorizontal="true"
+                        android:scaleType="fitCenter"
+                        android:text="วิธีใช้งานที่1"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="15dp">
+                    </TextView>
+                    <ImageButton
+                        android:id="@+id/Use1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"
+                        android:background="@color/white"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/usei"
+                        tools:ignore="SpeakableTextPresentCheck">
+
+                    </ImageButton>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_margin="10dp"
+                >
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitCenter"
+                        android:layout_centerHorizontal="true"
+                        android:text="วิธีใช้งานที่2"
+                        android:textSize="15dp"
+                        android:textColor="@color/black"
+                        android:textAlignment="center">
+
+                    </TextView>
+                    <ImageButton
+                        android:id="@+id/Use2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"
+                        android:background="@color/white"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/useii"
+                        tools:ignore="SpeakableTextPresentCheck">
+
+                    </ImageButton>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_margin="10dp"
+                >
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitCenter"
+                        android:layout_centerHorizontal="true"
+                        android:text="วิธีใช้งานที่3"
+                        android:textSize="15dp"
+                        android:textColor="@color/black"
+                        android:textAlignment="center">
+
+                    </TextView>
+                    <ImageButton
+                        android:id="@+id/Use3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"
+                        android:background="@color/white"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/useiii"
+                        tools:ignore="SpeakableTextPresentCheck">
+
+                    </ImageButton>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_margin="10dp"
+                >
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitCenter"
+                        android:layout_centerHorizontal="true"
+                        android:text="วิธีใช้งานที่4"
+                        android:textSize="15dp"
+                        android:textColor="@color/black"
+                        android:textAlignment="center">
+
+                    </TextView>
+                    <ImageButton
+                        android:id="@+id/Use4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"
+                        android:background="@color/white"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/useiiii"
+                        tools:ignore="SpeakableTextPresentCheck">
+
+                    </ImageButton>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_margin="10dp"
+                >
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitCenter"
+                        android:layout_centerHorizontal="true"
+                        android:text="วิธีใช้งานที่5"
+                        android:textSize="15dp"
+                        android:textColor="@color/black"
+                        android:textAlignment="center">
+
+                    </TextView>
+                    <ImageButton
+                        android:id="@+id/Use5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"
+                        android:background="@color/white"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/useiiiii"
+                        tools:ignore="SpeakableTextPresentCheck">
+
+                    </ImageButton>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </GridLayout>
+
+    </LinearLayout>
+</ScrollView>

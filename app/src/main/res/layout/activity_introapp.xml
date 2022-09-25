@@ -13,14 +13,12 @@
         android:layout_height="280dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="150dp"
-        android:contentDescription="TODO"
         app:srcCompat="@drawable/ic_veg"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="37dp"
         tools:layout_editor_absoluteY="140dp" />
-
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="65dp"
         android:layout_centerHorizontal="true"
@@ -31,7 +29,7 @@
         android:textColor="@color/black"
         android:textSize="25.5dp" />
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="65dp"
         android:layout_centerHorizontal="true"

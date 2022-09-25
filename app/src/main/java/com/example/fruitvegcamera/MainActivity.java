@@ -34,7 +34,7 @@ import java.nio.ByteOrder;
 public class MainActivity extends AppCompatActivity {
 
     // Button selectBtn, predictBtn,cameraBtn;
-    ImageButton selectImageBtn, selectCameraBtn, selectPredictBtn,ShowdatafruitBtn;
+    ImageButton selectImageBtn, selectCameraBtn, selectPredictBtn,ShowdatafruitBtn,howtouseBtn;
     Bitmap bitmap;
     ImageView imageView;
     int imageSize = 128;
@@ -51,8 +51,19 @@ public class MainActivity extends AppCompatActivity {
         selectCameraBtn = findViewById(R.id.selectCameraBtn);
         selectPredictBtn = findViewById(R.id.selectPredictBtn);
         ShowdatafruitBtn = findViewById(R.id.ShowdatafruitBtn);
+        howtouseBtn = findViewById(R.id.howtouseBtn);
         imageView = findViewById(R.id.imageView);
 
+
+        //กดเพื่อดูข้อมุล ผลไม้
+        howtouseBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent howtouseBtn = new Intent(MainActivity.this, Showhowtouse.class);
+                startActivity(howtouseBtn);
+            }
+        });
+        //กดเพื่อดูข้อมุล ผลไม้
         ShowdatafruitBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -60,6 +71,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(ShowdatafruitBtn);
             }
         });
+
         // เลือกรูปจากเกลรอรี่
         selectImageBtn.setOnClickListener(new View.OnClickListener() {
             @Override
